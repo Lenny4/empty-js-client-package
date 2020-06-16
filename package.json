@@ -1,0 +1,28 @@
+{
+  "name": "paste-image",
+  "version": "0.0.3",
+  "description": "Cross-browser pasting of images",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/redgeoff/paste-image"
+  },
+  "keywords": [
+    "paste",
+    "image",
+    "browser"
+  ],
+  "author": "Geoffrey Cox",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/redgeoff/paste-image/issues"
+  },
+  "scripts": {
+    "min": "uglifyjs dist/paste-image.js -mc > dist/paste-image.min.js",
+    "build": "mkdir -p dist && browserify index.js -s pasteImage -o dist/paste-image.js"
+  },
+  "devDependencies": {
+    "browserify": "^13.1.0",
+    "uglifyjs": "^2.4.10"
+  }
+}
