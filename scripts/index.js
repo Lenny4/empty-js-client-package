@@ -1,7 +1,7 @@
 'use strict';
 
 const PasteImage = function () {
-    console.log(33);
+    console.log('todo');
 };
 
 module.exports = PasteImage;

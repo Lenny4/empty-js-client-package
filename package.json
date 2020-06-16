@@ -1,28 +1,18 @@
 {
-  "name": "paste-image",
-  "version": "0.0.3",
-  "description": "Cross-browser pasting of images",
+  "name": "empty-js-client-package",
+  "version": "0.0.1",
+  "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git://github.com/redgeoff/paste-image"
+    "url": "git://github.com/Lenny4/empty-js-client-package"
   },
-  "keywords": [
-    "paste",
-    "image",
-    "browser"
-  ],
-  "author": "Geoffrey Cox",
+  "author": "Alexandre Beaujour",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/redgeoff/paste-image/issues"
-  },
   "scripts": {
-    "min": "uglifyjs dist/paste-image.js -mc > dist/paste-image.min.js",
-    "build": "mkdir -p dist && browserify index.js -s pasteImage -o dist/paste-image.js"
+    "build": "mkdir -p dist && browserify index.js -s bundleName -o dist/bundle-name.js"
   },
   "devDependencies": {
-    "browserify": "^13.1.0",
-    "uglifyjs": "^2.4.10"
+    "browserify": "^16.5.1"
   }
 }
