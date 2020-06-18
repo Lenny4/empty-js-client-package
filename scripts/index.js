@@ -1,7 +1,7 @@
 'use strict';
 
-const PasteImage = function () {
+const bundleName = function () {
     console.log('todo');
 };
 
-module.exports = PasteImage;
+module.exports = bundleName;
