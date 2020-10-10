@@ -10,9 +10,10 @@
   "author": "Alexandre Beaujour",
   "license": "MIT",
   "scripts": {
-    "build": "mkdir -p dist && browserify index.js -s bundleName -o dist/bundle-name.js"
+    "build": "mkdir -p dist && browserify -t browserify-css index.js -s bundleName -o dist/bundle-name.js"
   },
   "devDependencies": {
-    "browserify": "^16.5.1"
+    "browserify": "^16.5.2",
+    "browserify-css": "^0.15.0"
   }
 }
